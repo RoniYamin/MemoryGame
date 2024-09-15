@@ -1,0 +1,222 @@
+body {
+    background-image: url("nature.jpg");
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
+
+}
+
+.title
+{
+    color:white;  
+    font-size:larger;
+    font-size: 7rem;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
+    text-align: center;
+    margin-top:3rem;
+
+}
+
+#card-container
+{
+    text-align: center;
+}
+
+.mainContainer {
+    position: relative;
+    width: 250px;
+    height: 320px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.theCard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    border-radius: 2rem;
+}
+
+.theCard.flipped {
+    transform: rotateY(180deg);
+    border-radius: 2rem;
+
+}
+
+.theFront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background:#95e0cb;
+    color: #333;
+    border-radius: 2rem;
+
+}
+
+.theBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #95e0cb;
+    color: #333;
+    transform: rotate(180deg);
+    border-radius: 2rem;
+
+}
+
+.VmessageContainer
+{
+
+}
+
+
+
+
+.VmessageContainer, .vistoryMessage, .howToStartNewGame
+{
+    color:white;
+    font-family: "Poppins", sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+.pickPairs
+{
+    width: 40rem;
+}
+
+#nameField, #pairsAmountField, .pickPairs{
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
+    border-radius: 2rem;
+    border:none;
+    height: 4rem;
+    margin: 0.3rem;
+    padding-left: 1.5rem;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#startBtn
+{
+    height: 4rem;
+    margin: 0.3rem;
+    font-size: medium;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
+    border-radius: 2rem;
+    border:none;
+    color:white;
+    width:40rem;
+
+    background-color:#95e0cb;
+
+}
+
+#startBtn:hover, #information:hover, #closeRules:hover, .restartBtn:hover{
+    
+
+    background-color: #41b4a7;   
+
+}
+
+#nameField
+{
+    width:40rem;
+
+
+}
+
+#pairsAmountField
+{
+    width: 13rem;
+    width:40rem;
+
+}
+
+#information, #closeRules{
+    height: 4rem;
+    margin: 0.3rem;
+    font-size: medium;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
+    border-radius: 2rem;
+    border:none;
+    color:white;
+    background-color: #95e0cb;
+    width:40rem;
+
+}
+
+.restartBtn
+{
+    height: 4rem;
+    margin: 0.3rem;
+    font-size: medium;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
+    border-radius: 2rem;
+    border:none;
+    color:white;
+    width:40rem;
+
+    background-color:#95e0cb;
+}
+
+#information
+{
+    margin-bottom:4rem;
+}
+
+.containerLogIn
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top:3rem;
+    
+}
+
+.player-name, .timer, .moves-counter 
+{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+  
+
+#closeRules
+{
+    margin-bottom:2rem;
+    margin-left:2rem;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+#rules
+{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
+    color:grey;
+}
+
+#gameRules
+{
+    font-size:x-large;
+    color: #95e0cb;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
+    padding-left:1.5rem;
+    margin-top: 2rem;
+}

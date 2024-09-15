@@ -1,0 +1,57 @@
+<html></html>
+<head>
+    <title>Memory Game</title>
+    <link rel="icon" href="paint.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Wix+Madefor+Display:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+<body>
+    <h1 id="title" class="title">Color Memory Game</h1>
+    
+<div class="containerLogIn" id="containerLogIn">
+    <input id="nameField" placeholder="Type username...">
+    <input type="number" id="pairsAmountField" placeholder="Type amount of pairs... (30 max)" min="1" max="30">
+    <button id="startBtn" type="button" >start</button>
+    <button id="information" class="infoBtn" data-toggle="modal" data-target="#infoModal">Info</button>
+
+    </div>
+    <div id="victory" style="text-align: center; margin-bottom: 40px"></div>
+    <div id="card-container"></div>
+
+    <!--information and rules-->
+    <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                    <h5 id="gameRules" class="modal-title" id="infoModalLabel">Game Rules</h5>
+                    </button>
+                <div class="modal-body" id="rules">
+                    <p> 1) Choose your user name. </p>
+
+                       <p> 2) Pick the amount of pairs you want to play with (30 maxium). </p>
+                       <p>3) Press "start" to start the game. </p>
+                    
+                        <p> 4) The goal of the game is to match all the pairs of cards. </p>
+
+                        <p>  5) Gameplay: Once you start the game, glip over two cards at a time. If they match, they stay exposed. If they don't match, flip them back face-down. </p>
+
+                        <p> 6) Memorization: Remember the positions of the cards you've flipped to make better matches in subsequent turns.</p>
+
+                        <p>7) Winning: The game is won when all pairs have been matched.</p>
+                        <p>8) Press "play again" to start a new game, and next to that button you can choose amout of pairs again.</p>
+
+                        <p> That's it! Enjoy playing the memory game on your own and challenge your memory skills!</p>
+                </div>
+                    <button type="button" id="closeRules" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
